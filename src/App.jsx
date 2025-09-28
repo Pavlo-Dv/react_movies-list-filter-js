@@ -13,8 +13,8 @@ function search(movies, query) {
 
     serchedMovies = movies.filter(
       movie =>
-        movie.title.toLowerCase().includes(queryNormolized) ||
-        movie.description.toLowerCase().includes(queryNormolized),
+        (movie.title || '').toLowerCase().includes(queryNormolized) ||
+        (movie.description || '').toLowerCase().includes(queryNormolized),
     );
   }
 
