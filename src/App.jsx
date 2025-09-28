@@ -37,6 +37,7 @@ export const App = () => {
 
             <div className="control">
               <input
+                value={query}
                 type="text"
                 id="search-query"
                 className="input"
